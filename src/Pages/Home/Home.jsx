@@ -7,12 +7,12 @@ import BreakingNews from "./BreakingNews";
 
 const Home = () => {
     return (
-        <div className="text-center">
+        <div className="">
             <Header></Header>
             <BreakingNews></BreakingNews>
             <Navbar></Navbar>
            <h2 className="text-3xl text-center">Home Sweet Home</h2> 
-           <div className= "text-center grid grd-cols-1 md:grid-cols-4 gap-7">
+           <div className=  "w-full text-center grid grd-cols-1 md:grid-cols-4 gap-8">
             <div >
                 <LeftSideNav></LeftSideNav>
             </div>

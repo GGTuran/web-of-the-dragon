@@ -8,6 +8,7 @@ const Navbar = () => {
     <li><NavLink to="/">Home</NavLink></li>
     <li><NavLink to="/about">About</NavLink></li>
     <li><NavLink to="/career">Career</NavLink></li>
+    <li><NavLink to="/login">Login</NavLink></li>
     </>
 
   return (
@@ -48,7 +49,7 @@ const Navbar = () => {
         {/* <a className="btn">Button</a>
          */}
         <img className="w-10 rounded-full"  src={user} alt="" />
-         <Link>
+         <Link to='/login'>
          <button className="btn btn-ghost"> Login</button>
          </Link>
       </div>

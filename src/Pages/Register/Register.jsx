@@ -8,6 +8,11 @@ const Register = () => {
         const form = new FormData(e.currentTarget);
         console.log(form);
         console.log(e.currentTarget);
+        const name = form.get('name');
+        const photo = form.get('photo');
+        const email = form.get('email');
+        const password = form.get('password');
+        console.log(email, name, photo, password);
 
     }
 
@@ -18,8 +23,32 @@ const Register = () => {
     <div>
       <Navbar></Navbar>
       <div>
-        <h2 className="text-center text-3xl my-10">Login dude</h2>
+        <h2 className="text-center text-3xl my-10">Register for own good dude</h2>
         <form onSubmit={register} className="md:w-3/4 lg:w-1/2 mx-auto">
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Name</span>
+            </label>
+            <input
+              name="name"
+              type="text"
+              placeholder="Your name"
+              className="input input-bordered"
+              required
+            />
+          </div>
+          <div className="form-control">
+            <label className="label">
+              <span className="label-text">Photo URL</span>
+            </label>
+            <input
+              name="photo"
+              type="text"
+              placeholder="Photo Url"
+              className="input input-bordered"
+              required
+            />
+          </div>
           <div className="form-control">
             <label className="label">
               <span className="label-text">Email</span>
@@ -27,7 +56,7 @@ const Register = () => {
             <input
               name="email"
               type="email"
-              placeholder="email"
+              placeholder="Email"
               className="input input-bordered"
               required
             />
@@ -39,7 +68,7 @@ const Register = () => {
             <input
               name="password"
               type="password"
-              placeholder="password"
+              placeholder="Password"
               className="input input-bordered"
               required
             />
@@ -57,7 +86,7 @@ const Register = () => {
           
           Already have an account?
           <Link className="font-bold text-blue-600" to="/login">
-            Register
+            Login
           </Link>
         </p>
       </div>

@@ -19,7 +19,7 @@ const Home = () => {
             <div >
                 <LeftSideNav></LeftSideNav>
             </div>
-            <div className="md:col-span-23">
+            <div className="md:col-span-2">
                 {
                     news.map(aNews => <NewsCard
                     key={aNews._id}
